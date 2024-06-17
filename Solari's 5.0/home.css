@@ -1,0 +1,452 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+
+}
+
+body{
+  margin: 0;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #bb9734;
+  text-decoration: none;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 1779px;
+  margin: 0 auto;
+  background: #f6f3ca;
+  overflow: hidden;
+}
+
+/*NAVBAR*/
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 69px;
+  margin: 0 0 0 0;
+  background: #fdd76b;
+}
+
+.logo {
+  position: absolute;
+  width: 317px;
+  height: 58px;
+  top: 5px;
+  left: 19px;
+  background: url(01navbarLogo.png) center;
+  background-size: cover;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.navbar ul{
+  font-size: 22px;
+  font-weight: 350;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: Inter, var(--default-font-family);
+  position: absolute;
+  color: #000000;
+  list-style: none;
+  left: 350px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.navbar li{
+  padding-left: 50px;
+}
+
+.navbar li:hover{
+  cursor: pointer;
+  color: #bb9734;
+  font-size: 22px;
+}
+
+/*DEPARTAMENTOS*/
+
+.promocoes-titulo{
+  display: block;
+  position: relative;
+  height: 27px;
+  margin: 25px 0 35px 0px;
+  color: #f6f3ca;
+  font-family: Inter, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 26;
+  text-shadow: 0 3px 7px rgba(0, 0, 0, 0.315);
+}
+
+.tendencias-titulo{
+  display: block;
+  position: relative;
+  height: 27px;
+  margin: 25px 0 35px 0px;
+  color: #f6f3ca;
+  font-family: Inter, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 26;
+  text-shadow: 0 3px 7px rgba(0, 0, 0, 0.315);
+}
+
+.mini-menu {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit:fill;
+}
+
+.card-promocoes{
+  width: 100%;
+  height: 250px;
+}
+
+.card-tendencias{
+  width: 100%;
+  height: 350px;
+}
+
+.mini-menu .btn-link {
+  color: #000000;
+  background-color: #f6f3ca;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+  font-family: Inter, var(--default-font-family);
+}
+
+.promo .btn-primary{
+  color: #000000;
+  background-color: #f6f3ca;
+  text-decoration: none;
+  border-color: #f6f3ca;
+  transition: background-color 0.3s ease;
+  font-family: Inter, var(--default-font-family);
+  width: 100px;
+  width: auto;
+}
+
+.tendencias .btn-primary{
+  color: #000000;
+  background-color: #f6f3ca;
+  text-decoration: none;
+  border-color: #f6f3ca;
+  transition: background-color 0.3s ease;
+  font-family: Inter, var(--default-font-family);
+  width: 100px;
+  width: auto;
+}
+
+.newsletter .btn-primary{
+  color: #000000;
+  background-color: #f6f3ca;
+  text-decoration: none;
+  border-color: #f6f3ca;
+  transition: background-color 0.3s ease;
+  font-family: Inter, var(--default-font-family);
+  width: 100px;
+}
+
+.mini-menu .btn-link:hover {
+  background-color: #f5e28f;
+  color: #8d6a1e;
+}
+
+.col-md-3, .col-md-4:hover{
+  cursor: pointer;
+}
+
+.promo .btn-primary:hover{
+  background-color: #f5e28f;
+  color: #8d6a1e;
+  border-color: #f5e28f;
+}
+
+.tendencias .btn-primary:hover{
+  background-color: #f5e28f;
+  color: #8d6a1e;
+  border-color: #f5e28f;
+}
+
+.newsletter .btn-primary:hover{
+  background-color: #f5e28f;
+  color: #8d6a1e;
+  border-color: #f5e28f;
+}
+
+.promo .card, .tendencias .card {
+  transition: transform 0.3s;
+}
+
+.promo .card:hover, .tendencias .card:hover {
+  transform: scale(1.05);
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination .btn {
+  margin: 0 5px;
+  color: #d0a933;
+  border-color: #d0a933;
+}
+
+.pagination .btn:hover {
+  background-color:#f6f3ca;
+}
+
+.newsletter{
+  background-color: #d0a933;
+  text-align: center;
+  padding: 25px 0px;
+}
+.newsletter h2 {
+  color: #fdd76b;
+  margin-bottom: 0px;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+}
+
+.d-block w-100{
+  width: 100%;
+  height: 150px;
+}
+
+/*FOOTER*/
+  
+.rectangle-1d {
+  position: relative;
+  width: 100%;
+  height: 202px;
+  margin: 0px 0 0 0px;
+  background: #fdd76b;
+  z-index: 1;
+}
+.empty-1e {
+  position: absolute;
+  width: 416px;
+  height: 136px;
+  top: 33px;
+  left: 49px;
+  background: url(01navbarLogo.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 11;
+}
+.fale-conosco {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 33px;
+  left: 923px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.quem-somos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 33px;
+  left: 553px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 79;
+}
+.nossas-lojas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 60px;
+  left: 557px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 61px;
+  left: 923px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+.trocas-devolucoes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 89px;
+  left: 553px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.contact-info-1f {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 89px;
+  left: 923px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+.email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 118px;
+  left: 923px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+.privacy-policy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 119px;
+  left: 553px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 147px;
+  left: 923px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.faq {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 15px;
+  top: 147px;
+  left: 553px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}

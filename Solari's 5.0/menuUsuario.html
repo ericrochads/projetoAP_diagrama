@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solari's</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,800;1,200&display=swap" />
+    <link rel="stylesheet" href="menuUsuario.css" />
+  </head>
+  <body>
+
+<!-- BARRA DE NAVEGAÇÃO -->
+
+  <div class="navbar"> 
+    <a href="home.html" class="logo"></a>
+      <ul>
+        <li><a href="sobreNos.html" class="sobre">Sobre</a></li>
+        <li><a href="promocoes.html" class="promocoes">Promoções</a></li>
+        <li><a href="listaDeDesejo.html" class="lista-de-desejos">Lista de desejos</a></li>
+        <li><a href="sacola.html"class="sacola">Sacola</a></li>
+        <li><a href="login.html" class="login">Login</a></li>
+        <li><a href="cadastro.html" class="cadastro">Cadastro</a></li>
+      </ul>
+  </div>
+
+<!-- CONTEÚDO DA PÁGINA -->
+<div class="container">
+    <div class="sidebar">
+        <div class="profile">
+            <img src="07fotoPerfil.jpg" alt="Profile Picture">
+            <h3>Tadinho da Silva</h3>
+        </div>
+        <ul class="opcoes">
+            <li><a href="#" onclick="showContent('meus-pedidos')"><i class="fas fa-box"></i> Meus Pedidos</a></li>
+            <li><a href="#" onclick="showContent('informacoes-conta')"><i class="fas fa-user"></i> Informações da Conta</a></li>
+            <li><a href="#" onclick="showContent('enderecos-salvos')"><i class="fas fa-map-marker-alt"></i> Endereços Salvos</a></li>
+            <li><a href="listaDeDesejo.html" style="margin-left: 9px;">Lista de Desejos</a></li>
+            <li><a href="home.html" style="margin-left: 9px;">Sair</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div id="meus-pedidos" class="content-section">
+            <span class="meusPedidos-titulo">MEUS PEDIDOS</span>
+            <span class="acesso-meusPedidos">Acompanhe a situação de suas compras</span>
+
+            <div class="container-meusPedidos">
+                <div class="order-meusPedidos">
+                    <div class="order-header-meusPedidos">
+                        <span class="order-date-meusPedidos">Pedido em: 10/06/2024</span>
+                    </div>
+                    <div class="order-content-meusPedidos">
+                        <img src="04nike-blusa.png" alt="Produto 1" class="product-image-meusPedidos">
+                        <div class="product-details-meusPedidos">
+                            <h3>Camisa Nike SportsWear</h3>
+                            <p>Marca: NIKE</p>
+                            <p>Preço: R$ 199,99</p>
+                            <p>Situação: Entregue em 12/06/2024</p>
+                        </div>
+                        <div class="order-actions-meusPedidos">
+                            <a href="home.html" class="action-link-meusPedidos">Avaliar</a>
+                            <a href="rastrear.html" class="action-link-meusPedidos">Rastrear</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-meusPedidos">
+                    <div class="order-header-meusPedidos">
+                        <span class="order-date-meusPedidos">Pedido em: 08/06/2024</span>
+                    </div>
+                    <div class="order-content-meusPedidos">
+                        <img src="05calcaBrancaCargo.png" alt="Produto 2" class="product-image-meusPedidos">
+                        <div class="product-details-meusPedidos">
+                            <h3>Calça Branca Cargo</h3>
+                            <p>Marca: Silkier</p>
+                            <p>Preço: R$ 299,99</p>
+                            <p>Situação: Previsão de entrega: 20/06/2024</p>
+                        </div>
+                        <div class="order-actions-meusPedidos">
+                            <a href="home.html" class="action-link-meusPedidos">Avaliar</a>
+                            <a href="rastrear.html" class="action-link-meusPedidos">Rastrear</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-meusPedidos">
+                    <div class="order-header-meusPedidos">
+                        <span class="order-date-meusPedidos">Pedido em: 08/06/2024</span>
+                    </div>
+                    <div class="order-content-meusPedidos">
+                        <img src="06blusaCasualFlorida.png" alt="Produto 2" class="product-image-meusPedidos">
+                        <div class="product-details-meusPedidos">
+                            <h3>Blusa Casual Florida</h3>
+                            <p>Marca: Fiño</p>
+                            <p>Preço: R$ 299,99</p>
+                            <p>Situação: Previsão de entrega: 20/06/2024</p>
+                        </div>
+                        <div class="order-actions-meusPedidos">
+                            <a href="home.html" class="action-link-meusPedidos">Avaliar</a>
+                            <a href="rastrear.html" class="action-link-meusPedidos">Rastrear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="informacoes-conta" class="content-section" style="display:none;">
+
+            <span class="informacoesDaConta-titulo">INFORMAÇÕES DA CONTA</span>
+            <span class="acesso-informacoesDaConta">Visualize ou altere suas informações</span>
+
+            <div class="container-informacoesDaConta">
+                <form class="form-informacoesDaConta">
+                    <div class="form-row-informacoesDaConta">
+                        <div class="form-group-informacoesDaConta">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" value="123.456.78-09" disabled>
+                        </div>
+                        <div class="form-group-informacoesDaConta">
+                            <label for="genero">Gênero</label>
+                            <select id="genero" name="genero" disabled>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-informacoesDaConta">
+                        <div class="form-group-informacoesDaConta">
+                            <label for="nome_completo">Nome Completo</label>
+                            <input type="text" id="nome_completo" name="nome_completo" value="Tadinho da Silva" disabled>
+                        </div>
+                        <div class="form-group-informacoesDaConta">
+                            <label for="nome_social">Nome Social</label>
+                            <input type="text" id="nome_social" name="nome_social" disabled>
+                            <input type="checkbox" id="checkbox_nome_social" style="display: flex;" onclick="toggleNomeSocial()">
+                        </div>
+                    </div>
+        
+                    <div class="form-row-informacoesDaConta">
+                        <div class="form-group-informacoesDaConta">
+                            <label for="data_nascimento">Data de Nascimento</label>
+                            <input type="text" id="data_nascimento" name="data_nascimento" value="17/06/1980" disabled>
+                        </div>
+                        <div class="form-group-informacoesDaConta">
+                            <label for="naturalidade">Naturalidade</label>
+                            <input type="text" id="naturalidade" name="naturalidade" value="Brasileira" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-informacoesDaConta">
+                        <div class="form-group-informacoesDaConta">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" value="4002 8922" disabled>
+                        </div>
+                        <div class="form-group-informacoesDaConta">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" value="71 9 9456-1234" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-informacoesDaConta">
+                        <div class="form-group-informacoesDaConta">
+                            <label for="alterar_senha">Alterar Senha</label>
+                            <input type="checkbox" id="checkbox_senha" onclick="toggleSenha()">
+                            <input type="password" id="alterar_senha" name="alterar_senha" disabled>
+                        </div>
+                        <div class="form-group-informacoesDaConta">
+                            <label for="email">Email</label>
+                            <input type="checkbox" id="checkbox_email" onclick="toggleEmail()">
+                            <input type="email" id="email" name="email" disabled>
+                        </div>
+                    </div>
+        
+                    <button class="button-informacoesDaConta" type="submit">Confirmar</button>
+                </form>
+            </div>
+        
+            <script>
+                function toggleNomeSocial() {
+                    var checkbox = document.getElementById('checkbox_nome_social');
+                    var input = document.getElementById('nome_social');
+                    input.disabled = !checkbox.checked;
+                }
+        
+                function toggleSenha() {
+                    var checkbox = document.getElementById('checkbox_senha');
+                    var input = document.getElementById('alterar_senha');
+                    input.disabled = !checkbox.checked;
+                }
+        
+                function toggleEmail() {
+                    var checkbox = document.getElementById('checkbox_email');
+                    var input = document.getElementById('email');
+                    input.disabled = !checkbox.checked;
+                }
+            </script>
+        </div>
+
+        <div id="enderecos-salvos" class="content-section" style="display:none;">
+
+            <span class="enderecos-titulo">ENDEREÇOS SALVOS</span>
+            <span class="acesso-enderecos">Adicione ou altere seus endereços.</span>
+
+            <div class="container-enderecos">
+                <form class="form-enderecos">
+                    <div class="form-row-enderecos">
+                        <div class="form-group-enderecos">
+                            <label for="nome_completo">Residente</label>
+                            <input type="text" id="nome_completo" name="nome_completo" value="Tadinho da Silva" disabled>
+                        </div>
+                        <div class="form-group-enderecos">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" value="14.487-989" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-enderecos">
+                        <div class="form-group-enderecos">
+                            <label for="rua">Rua/Logradouro</label>
+                            <input type="text" id="rua" name="rua" value="Rua Carvalho" disabled>
+                        </div>
+                        <div class="form-group-enderecos">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" value="12" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-enderecos">
+                        <div class="form-group-enderecos">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" name="complemento" value="Casa 18" disabled>
+                        </div>
+                        <div class="form-group-enderecos">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" value="Norte" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-enderecos">
+                        <div class="form-group-enderecos">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" value="Xique-Xique" disabled>
+                        </div>
+                        <div class="form-group-enderecos">
+                            <label for="estado">Estado</label>
+                            <select id="estado" name="estado" disabled>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA" selected>Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="form-row-enderecos">
+                        <div class="form-group-enderecos">
+                            <label for="telefone">Celular</label>
+                            <input type="tel" id="telefone" value="71 9 9856-8775" disabled>
+                        </div>
+                    </div>
+        
+                    <div class="form-actions-enderecos">
+                        <button class="button-enderecos" type="submit">Salvar Endereço</button>
+                        <button class="button-enderecos" type="button" onclick="window.location.href='index.html'">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        
+        </div>
+        <div id="lista-desejos" class="content-section" style="display:none;">Conteúdo de Lista de Desejos</div>
+    </div>
+</div>
+
+<script>
+    function showContent(sectionId) {
+        var sections = document.getElementsByClassName('content-section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].style.display = 'none';
+        }
+        document.getElementById(sectionId).style.display = 'block';
+    }
+</script>
+
+
+<!-- RODAPÉ DA PÁGINA -->
+       
+<div class="rectangle-1d">
+    <div class="empty-1e"></div>
+    <a href="sobreNos.html" class="link"><span class="quem-somos">Quem Somos</span></a>
+    <a href="nossas-lojas.html" class="link"><span class="nossas-lojas">Nossas Lojas</span></a>
+    <span class="contact-info">61 9 94541 2121</span>
+    <a href="trocas-devolucoes.html" class="link"><span class="trocas-devolucoes">Trocas e Devoluções</span></a>
+    <span class="contact-info-1f">61 9 91156 5989</span>
+    <span class="email">solarissac@solaris.com</span>
+    <a href="politica-de-privacidade.html" class="link"><span class="privacy-policy">Política de Privacidade</span></a>
+    <span class="address">Rua Viamão, 857, Barroca, Belo Horizonte - MG</span>
+    <a href="faq.html" class="link"><span class="faq">Perguntas Frequentes</span></a>
+  </div>
+  </div>
+  </body>
+</html>
