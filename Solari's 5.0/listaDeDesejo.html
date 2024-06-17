@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solari's</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,500;0,600;0,800;1,200&display=swap" />
+    <link rel="stylesheet" href="listaDeDesejo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+
+  <body>
+
+<!-- BARRA DE NAVEGAÇÃO -->
+
+  <div class="navbar">
+    <a href="home.html" class="logo"></a>
+      <ul>
+        <li><a href="sobreNos.html" class="sobre">Sobre</a></li>
+        <li><a href="promocoes.html" class="promocoes">Promoções</a></li>
+        <li><a href="listaDeDesejo.html" class="lista-de-desejos">Lista de desejos</a></li>
+        <li><a href="sacola.html"class="sacola">Sacola</a></li>
+        <li><a href="login.html" class="login">Login</a></li>
+        <li><a href="cadastro.html" class="cadastro">Cadastro</a></li>
+      </ul>
+  </div>
+
+<!-- CONTEÚDO DA PÁGINA -->
+
+  <span class="sua-lista-de-desejos">SUA LISTA DE DESEJOS</span>
+
+  <div class="content-container">
+    <div class="wishlist-container">
+      <table class="wishlist-table">
+        <thead>
+          <tr>
+            <th>Selecionar</th>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Em Estoque</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td class="select"><input type="checkbox" name="product1"></td>
+            <td class="product">
+              <img src="04nike-blusa.png" alt="Produto 1" class="imagem-produto">
+              <span class="nome-produto">Camisa Nike Sportswear</span>
+            </td>
+            <td class="preco">R$ 100,00</td>
+            <td class="estoque"><i class="fas fa-check-circle disponivel"></i></td>
+          </tr>
+    
+          <tr>
+            <td class="select"><input type="checkbox" name="product2"></td>
+            <td class="product">
+              <img src="05calcaBrancaCargo.png" alt="Produto 2" class="imagem-produto">
+              <span class="nome-produto">Calça Cargo Branca</span>
+            </td>
+            <td class="preco">R$ 200,00</td>
+            <td class="estoque"><i class="fas fa-times-circle indisponivel"></i></td>
+          </tr>
+    
+          <tr>
+            <td class="select"><input type="checkbox" name="product3"></td>
+            <td class="product">
+              <img src="06blusaCasualFlorida.png" alt="Produto 3" class="imagem-produto">
+              <span class="nome-produto">Blusa Casual Florida</span>
+            </td>
+            <td class="preco">R$ 150,00</td>
+            <td class="estoque"><i class="fas fa-check-circle disponivel"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="botao-lista" onclick="location.href='sacola.html'">Adicionar a sacola</button>
+    <button class="botao-home" onclick="location.href='home.html'">Página Inicial</button>
+  </div>
+    </div>
+
+<!-- RODAPÉ DA PÁGINA-->
+
+<div class="rectangle-1d">
+  <div class="empty-1e"></div>
+  <a href="sobreNos.html" class="link"><span class="quem-somos">Quem Somos</span></a>
+  <a href="nossas-lojas.html" class="link"><span class="nossas-lojas">Nossas Lojas</span></a>
+  <span class="contact-info">61 9 94541 2121</span>
+  <a href="trocas-devolucoes.html" class="link"><span class="trocas-devolucoes">Trocas e Devoluções</span></a>
+  <span class="contact-info-1f">61 9 91156 5989</span>
+  <span class="email">solarissac@solaris.com</span>
+  <a href="politica-de-privacidade.html" class="link"><span class="privacy-policy">Política de Privacidade</span></a>
+  <span class="address">Rua Viamão, 857, Barroca, Belo Horizonte - MG</span>
+  <a href="faq.html" class="link"><span class="faq">Perguntas Frequentes</span></a>
+</div>
+    </div>
+    
+  </body>
+</html>
